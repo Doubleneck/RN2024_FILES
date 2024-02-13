@@ -9,5 +9,5 @@
 |7.2.|5| FS 10b-päivitys ja tehtävien 3-10 läpikäynti.|
 |8.2.|5| FS 10b Form state management ja form validation osion päivitys käyttämään useFormik() hookia|
 |13.2.|6| FS 10c Fetchaamisen selvittely päivitetyllä EXPOlla (käyttää eri URLeja), Upgrade: käyttämään Apollo Client v3, Ensimmäinen tehtävä (10.11) toimimaan Node20 -backin kanssa.|
-|13.2.|2| FS 10c expon Constants.manifest -configuraation muuttaminen expon Constants.expoConfigia|
+|13.2.|2| FS 10c expon Constants.manifest -configuraation muuttaminen käyttämään expon Constants.expoConfigia|
 |TL|39| |
