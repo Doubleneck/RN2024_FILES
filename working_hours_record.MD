@@ -8,5 +8,5 @@
 |31.1.|7| Uusimpien RN ja expoversioiden perusteella toteutettu "setting up the App" ja FS 10a-päivittäminen|
 |7.2.|5| FS 10b-päivitys ja tehtävien 3-10 läpikäynti.|
 |8.2.|5| FS 10b Form state management ja form validation osion päivitys käyttämään useFormik() hookia|
-|13.2.|6| FS 10c Fetchaamisen selvittely päivitetyllä EXPOlla (käyttää eri URLeja), Upgrade: käyttämään Apollo v3, Ensimmäinen tehtävä (10.11) toimimaan Node20 -backin kanssa.|
+|13.2.|6| FS 10c Fetchaamisen selvittely päivitetyllä EXPOlla (käyttää eri URLeja), Upgrade: käyttämään Apollo Client v3, Ensimmäinen tehtävä (10.11) toimimaan Node20 -backin kanssa.|
 |TL|37| |
