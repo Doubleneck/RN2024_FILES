@@ -1,1 +1,2 @@
 Change rate-repository-api url in material 10c MD.
+Update the final url of a fixed backend to 10.13 and check all the other places where might be references to RATE-REPOSITORY-API
