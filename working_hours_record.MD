@@ -10,4 +10,5 @@
 |8.2.|5| FS 10b Form state management ja form validation osion päivitys käyttämään useFormik() hookia|
 |13.2.|8 | FS 10c Fetchaamisen selvittely päivitetyllä EXPOlla, Upgrade: käyttämään Apollo Client v3, Ensimmäinen tehtävä (10.11) toimimaan Node20 -backin kanssa. Cache-ongelmien selvittelyä. Expon Constants.manifest -configuraation muuttaminen käyttämään expon Constants.expoConfigia|
 |14.2.|0.5| FS 10c materiaalin korjaus rivit 1-328|
-|TL|39.5| |
+|14.2.|2.5| FS 10c materiaalin korjaus rivit 329-480, teht 10.12. Huomattu, että alun React Native Debugger -osio ja ylipäänsä debuggaus vaatii päivitystä.|
+|TL|42| |
