@@ -9,6 +9,7 @@ import useSignIn from '../hooks/useSignIn';
 import theme from '../theme';
 import Button from './Button';
 
+
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
@@ -37,6 +38,43 @@ const validationSchema = yup.object().shape({
   password: yup.string().required('Password is required'),
 });
 
+const SignInForm = ({ formik }) => (
+  <View style={styles.container}>
+    <View style={styles.fieldContainer}>
+      <TextInput
+        placeholder="Username"
+        onChangeText={formik.handleChange('username')}
+        value={formik.values.username}
+        style={{
+          borderColor: formik.touched.username && formik.errors.username ? 'red' : 'gray',
+          borderWidth: 1,
+          padding: 10,
+        }}
+      />
+      {formik.touched.username && formik.errors.username && (
+        <Text style={styles.errorText}>{formik.errors.username}</Text>
+      )}
+    </View>
+    <View style={styles.fieldContainer}>
+      <TextInput
+        placeholder="Password"
+        secureTextEntry
+        onChangeText={formik.handleChange('password')}
+        value={formik.values.password}
+        style={{
+          borderColor: formik.touched.password && formik.errors.password ? 'red' : 'gray',
+          borderWidth: 1,
+          padding: 10,
+        }}
+      />
+      {formik.touched.password && formik.errors.password && (
+        <Text style={styles.errorText}>{formik.errors.password}</Text>
+      )}
+    </View>
+    <Button onPress={formik.handleSubmit}>Sign in</Button>
+  </View>
+);
+
 const SignIn = () => {
   const [signIn] = useSignIn();
   const navigate = useNavigate();
@@ -50,47 +88,11 @@ const SignIn = () => {
       await signIn({ username, password });
 
       navigate('/', { replace: true });
-
     },
+    
   });
 
-  return (
-    <View style={styles.container}>
-      <View style={styles.fieldContainer}>
-        <TextInput
-          placeholder="Username"
-          onChangeText={formik.handleChange('username')}
-          value={formik.values.username}
-          style={{
-            borderColor: formik.touched.username && formik.errors.username ? 'red' : 'gray',
-            borderWidth: 1,
-            padding: 10,
-          }}
-        />
-        {formik.touched.username && formik.errors.username && (
-          <Text style={styles.errorText}>{formik.errors.username}</Text>
-        )}
-      </View>
-      <View style={styles.fieldContainer}>
-        <TextInput
-          placeholder="Password"
-          secureTextEntry
-          onChangeText={formik.handleChange('password')}
-          value={formik.values.password}
-          style={{
-            borderColor: formik.touched.password && formik.errors.password ? 'red' : 'gray',
-            borderWidth: 1,
-            padding: 10,
-          }}
-        />
-        {formik.touched.password && formik.errors.password && (
-          <Text style={styles.errorText}>{formik.errors.password}</Text>
-        )}
-      </View>
-      
-      <Button  onPress={formik.handleSubmit} title="Sign in" />
-    </View>
-  );
+  return <SignInForm formik={formik} />;
 };
 
 export default SignIn;
