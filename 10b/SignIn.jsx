@@ -66,7 +66,7 @@ const SignInForm = ({ formik }) => (
         <Text style={styles.errorText}>{formik.errors.password}</Text>
       )}
     </View>
-    <Button onPress={formik.handleSubmit} title="Sign in" />
+    <Button onPress={formik.handleSubmit}>Sign in</Button>
   </View>
 );
 
