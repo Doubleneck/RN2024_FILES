@@ -11,4 +11,5 @@
 |13.2.|8 | FS 10c Fetchaamisen selvittely päivitetyllä EXPOlla, Upgrade: käyttämään Apollo Client v3, Ensimmäinen tehtävä (10.11) toimimaan Node20 -backin kanssa. Cache-ongelmien selvittelyä. Expon Constants.manifest -configuraation muuttaminen käyttämään expon Constants.expoConfigia|
 |14.2.|6| FS 10c materiaalin upgrade koko 10c MD-dokumentti, teht 10.12. Huomattu, että alun React Native Debugger -osio ja ylipäänsä debuggaus vaatii päivitystä,  tehtävät 10.13-10.16|
 |15.2.|6| FS 10d tehtävät 10.17-10.27 toimimaan uudella versiolla, komponenttien: CreateReview, SignIn, SignUp päivitys useFormik()iin|
-|TL|51| |
+|16.2.|3| FS RN kaikkien osien a-d testaus "from the scratch" päivitetyillä mallivastauksilla, debugging osion päivitys part10a.md:ssä, part10d.md läpi, ei muutoksia|
+|TL|54| |
