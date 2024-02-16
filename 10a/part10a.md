@@ -200,19 +200,14 @@ The good old console.log messages appear in the Expo development tools command l
 
 ![GraphQL structure](../../images/10/27new.png)
 
-That might actually be enough in most cases, but sometimes we need more.
-[React Native Debugger](https://docs.expo.io/workflow/debugging/#react-native-debugger) is a tool that offers a similar set of debugging features as the browser's developer tools. Let's get started by installing React Native Debugger with the help of the [installation instructions](https://github.com/jhen0409/react-native-debugger#installation). If you are unsure which installation method to choose, downloading a pre-built binary from the [release page](https://github.com/jhen0409/react-native-debugger/releases) is perhaps the easiest option. On the release page, find the latest release which supports React Native version 0.73 and download the binary suitable for your operating system (for example <i>.dmg</i> file for macOS and <i>.exe</i> file for Windows) under the "Assets" section. Once the installation is complete, start the React Native Debugger, open a new debugger window (shortcuts: <em>Command+T</em> on macOS, <em>Ctrl+T</em> on Linux/Windows) and set the React Native packager port to <em>19000</em>.
+That might actually be enough in most cases, but sometimes we need more. React Native provides an in-app developer menu which offers several debugging options. Read more about [debugging react native applications](https://reactnative.dev/docs/debugging).
 
-**NB:** If the debugger can't connect to the application and you see the error message "Another debugger is already connected", make sure that <i><http://localhost:19000/debugger-ui></i> is not open in some browser tab.
-  
-Next, we need to start our application and connect to the debugger. Start the application by running <em>npm start</em>. Once the application is running, open it with either an emulator or the Expo mobile app. Inside the emulator or the Expo mobile app, open the developer menu by following the [instructions](https://docs.expo.dev/debugging/tools/) in the Expo's documentation. From the developer menu, select <i>Debug remote JS</i> to connect to the debugger. Now, you should be able to see the application's component tree in the debugger:
+To inspect the React element tree, props, and state you can install React DevTools. 
 
-![React Native Debugger](../../images/10/24.png)
-
-The debugger's <i>Console</i> tab displays the application's logs. Like in the browser's development tools, error messages and messages logged with the <em>console.log</em> method are displayed there. Try adding a message with the <em>console.log</em> method in the <i>App.js</i> file and see that it is displayed in the debugger.
-
-You can use the debugger to inspect the component's state and props as well as <i>change</i> them. Try finding the <em>Text</em> component rendered by the <em>App</em> component using the debugger. You can either use the search or go through the component tree. Once you have found the <em>Text</em> component in the tree, click it, and change the value of the <em>children</em> prop. The change should be automatically visible in the application's preview.
-
-For more useful React Native application debugging tools, head out to the Expo's [debugging documentation](https://docs.expo.io/workflow/debugging).
+```shell
+npx react-devtools
+```
+Read here about [React DevTools](https://reactnative.dev/docs/react-devtools). For more useful React Native application debugging tools, also head out to the Expo's [debugging documentation](https://docs.expo.io/workflow/debugging).
 
 </div>
+
