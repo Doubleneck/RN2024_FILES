@@ -646,7 +646,6 @@ There are some restrictions concerning the use of UseFormik(). Read this to beco
 Let's see how this works by creating a form for calculating the [body mass index](https://en.wikipedia.org/wiki/Body_mass_index):
 
 ```javascript
-import React from 'react';
 import { Text, TextInput, Pressable, View } from 'react-native';
 import { useFormik } from 'formik';
 
